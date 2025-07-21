@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiénes Somos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen text-[#333333]">
+  <header class="bg-[#1C3973] relative">
+    <div class="font-[Poppins] text-[16px] container mx-auto flex flex-col md:flex-row md:justify-between md:items-center py-2 px-4 relative">
+      <div class="flex justify-center md:justify-start">
+        <img src="../img/DIFlogo.jpg" alt="Logo" class="h-24 w-auto rounded-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
+      </div>
+      <button id="menu-btn" class="md:hidden text-white absolute top-8 right-6 z-30" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+      <nav id="main-menu" class="fixed inset-0 bg-[#1C3973]/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white font-semibold
+        transition-all duration-300 z-20 md:static md:bg-transparent md:flex-row md:space-y-0 md:space-x-10 md:translate-x-0 -translate-x-full">
+        <button id="close-menu" class="absolute top-8 right-6 text-white md:hidden" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="inicio.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Inicio</a>
+        <a href="historia.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Historia</a>
+        <a href="quienesSomos.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Quiénes somos</a>
+        <a href="programas.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Programas</a>
+      </nav>
+    </div>
+  </header>
+  <section class="py-10 font-[Open_Sans] text-[16px]">
+    <div class="container mx-auto px-4 space-y-10">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="flex-1 flex flex-col justify-center">
+          <h2 class="text-xl font-bold mb-4 text-white bg-[#1C3973] w-fit px-4 py-2 rounded">Quiénes Somos</h2>
+          <p class="text-[#333333] justify-start">
+            El DIF Municipal de Pabellón de Arteaga es un organismo público comprometido con el desarrollo integral de los grupos más vulnerables de nuestra comunidad.
+          </p>
+          <p class="text-[#333333] justify-start">
+            Su misión es brindar asistencia social profesional a personas en situación de riesgo, incluyendo niñas, niños, adolescentes, adultos mayores, personas con discapacidad y familias necesitadas.
+            A través de la ejecución de programas estatales y nacionales, el DIF municipal coordina acciones para fortalecer la nutrición, la salud, la orientación psicológica y jurídica, y la capacitación comunitaria
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="flex-1 flex flex-col justify-center">
+          <h2 class="text-xl font-bold mb-4 text-white bg-[#1C3973] w-fit px-4 py-2 rounded">Misión</h2>
+          <p class="text-[#333333]">
+            Brindar asistencia social integral y profesional a las familias y personas vulnerables del municipio de Pabellón de Arteaga, promoviendo su bienestar inclusión y desarrollo; en colaboración con la comunidad y otros sectores sociales.
+          </p>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="overflow-hidden rounded-xl w-80 h-52 sm:w-96 sm:h-60 border-4 border-[#CC3079] shadow-lg flex-shrink-0 flex-grow-0">
+            <img src="../img/imgMision.jpg" alt="img_Mision" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="flex-1 flex flex-col justify-center">
+          <h2 class="text-xl font-bold mb-4 text-white bg-[#1C3973] w-fit px-4 py-2 rounded">Visión</h2>
+          <p class="text-[#333333]">
+            Ser una institución líder en la atención y protección de las familias y personas vulnerables del municipio de Pabellón de Arteaga, reconocida por su compromiso, eficacia y transparencia, contribuir a la construcción de una sociedad más justa, equitativa y solidaria.
+          </p>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="overflow-hidden rounded-xl w-80 h-52 sm:w-96 sm:h-60 border-4 border-[#CC3079] shadow-lg flex-shrink-0 flex-grow-0">
+            <img src="../img/imgVision.jpg" alt="img_Vision" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-10 font-[Open_Sans] text-[16px]">
+    <div class="container mx-auto px-4 space-y-10">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="flex-1 flex flex-col justify-center">
+          <h2 class="text-xl font-bold mb-4 text-white bg-[#1C3973] w-fit px-4 py-2 rounded">Valores</h2>
+          <ul class="space-y-4 mt-4">
+            <li class="flex items-start">
+              <span class="inline-block w-3 h-3 mt-1 bg-[#CC3079] rounded-md mr-3 flex-shrink-0"></span>
+              <div>
+                <span class="font-semibold">Responsabilidad:</span>
+                <span class="text-[#333333]">Compromiso institucional y personal en la atención de las necesidades sociales de la comunidad.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-block w-3 h-3 mt-1 bg-[#CC3079] rounded-md mr-3 flex-shrink-0"></span>
+              <div>
+                <span class="font-semibold">Transparencia:</span>
+                <span class="text-[#333333]">Gestión clara, honesta y abierta de los recursos y acciones para generar confianza ciudadana.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-block w-3 h-3 mt-1 bg-[#CC3079] rounded-md mr-3 flex-shrink-0"></span>
+              <div>
+                <span class="font-semibold">Solidaridad:</span>
+                <span class="text-[#333333]"> Apoyo a los sectores vulnerables promoviendo la ayuda mutua y el trabajo colectivo.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-block w-3 h-3 mt-1 bg-[#CC3079] rounded-md mr-3 flex-shrink-0"></span>
+              <div>
+                <span class="font-semibold">Equidad:</span>
+                <span class="text-[#333333]">Igualdad de oportunidades para todas las personas, sin distinción de género, edad o condición.</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-block w-3 h-3 mt-1 bg-[#CC3079] rounded-md mr-3 flex-shrink-0"></span>
+              <div>
+                <span class="font-semibold">Ética:</span>
+                <span class="text-[#333333]">Conducta profesional basada en la justicia, la integridad y el respeto a los derechos humanos.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#1C3973] text-white mt-auto">
+    <div class="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="flex justify-center md:justify-start">
+        <img src="../img/DIFlogo.jpg" alt="Logo DIF" class="h-24 w-auto rounded-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
+      </div>
+      <div class="text-[16px]">
+        <h4 class="font-semibold font-[Poppins] mb-2 border-b-4 border-[#CC3079] w-[120px]">Mapa de sitio</h4>
+        <ul class="space-y-1 font-[Open_Sans] text-sm justify-start" >
+          <li><a href="inicio.html" class="hover:text-pink-300">Inicio</a></li>
+          <li><a href="historia.html" class="hover:text-pink-300">Historia</a></li>
+          <li><a href="quienesSomos.html" class="hover:text-pink-300">Quiénes somos</a></li>
+          <li><a href="programas.html" class="hover:text-pink-300">Programas</a></li>
+        </ul>
+      </div>
+      <div class="text-[16px]">
+        <h4 class="font-semibold mb-2 font-[Poppins] border-b-4 border-[#CC3079] w-[90px]">Contacto</h4>
+        <p class="font-[Open_Sans]">dif@pabellon.gob.mx</p>
+        <p class="font-[Open_Sans]">465 958 0220</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-2">
+          <a href="https://www.facebook.com/pabellon.gob/"  target="_blank" aria-label="Facebook">
+            <img src="../img/iconFacebook.png" alt="Facebook" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://www.instagram.com/difestatal_ags/" target="_blank" aria-label="Instagram">
+            <img src="../img/iconInstagram.png" alt="Instagram" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://x.com/DIFAgs" target="_blank" aria-label="X">
+            <img src="../img/iconoX.jpeg" alt="X" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-4 border-t-2 border-[#CC3079] pt-4 pb-4">
+      ©2025 DIF Pabellón de Arteaga
+    </div>
+  </footer>
+  <script src="../js/menuResponsivo.js"></script>
+</body>
+</html>

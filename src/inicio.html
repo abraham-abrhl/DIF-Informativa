@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen text-[#333333] overflow-x-hidden">
+  <header class="bg-[#1C3973] relative">
+    <div class="font-[Poppins] text-[16px] container mx-auto flex flex-col md:flex-row md:justify-between md:items-center py-2 px-4 relative">
+      <div class="flex justify-center md:justify-start">
+        <img src="../img/DIFlogo.jpg" alt="Logo" class="h-24 w-auto rounded-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
+      </div>
+      <button id="menu-btn" class="md:hidden text-white absolute top-8 right-6 z-30" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+      <nav id="main-menu" class="fixed inset-0 bg-[#1C3973]/95 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white font-semibold
+        transition-all duration-300 z-20 md:static md:bg-transparent md:flex-row md:space-y-0 md:space-x-10 md:translate-x-0 -translate-x-full">
+        <button id="close-menu" class="absolute top-8 right-6 text-white md:hidden" aria-label="Cerrar menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="inicio.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Inicio</a>
+        <a href="historia.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Historia</a>
+        <a href="quienesSomos.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Quiénes somos</a>
+        <a href="programas.html" class="text-2xl md:text-base px-6 py-2 rounded-lg hover:bg-[#CC3079] hover:text-white transition">Programas</a>
+      </nav>
+    </div>
+  </header>
+  <section class="relative py-10 font-[Montserrat] overflow-hidden">
+    <img src="../img/fondo.jpg" alt="Fondo" 
+      class="absolute inset-0 w-full h-full object-cover blur-md brightness-75 -z-10" />
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start relative">
+      <div class="flex-1 md:pr-8 w-full">
+        <div class="bg-white bg-opacity-80 rounded-xl px-6 py-4 shadow-lg inline-block">
+          <h1 class="text-3xl text-left md:text-4xl font-bold mb-4">
+            Bienvenido al sitio
+          </h1>
+          <h1 class="text-3xl text-left md:text-4xl font-bold mb-4">
+            web oficial
+          </h1>
+          <h1 class="text-3xl text-left md:text-4xl font-bold mb-4">
+            <span class="text-[#CC3079] block md:inline">DIF Pabellón de</span>
+          </h1>
+          <h1 class="text-3xl text-left md:text-4xl font-bold mb-4">
+            <span class="text-[#CC3079] block md:inline">Arteaga</span>
+          </h1>
+        </div>
+      </div>
+      <div class="flex-1 max-w-lg md:max-w-md mx-auto md:mx-0 w-full">
+        <img src="../img/pabellon.jpeg" alt="Foto Pabellón"
+          class="shadow-lg w-full max-w-xs md:max-w-full rounded-2xl border-4 border-[#CC3079] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
+      </div>
+    </div>
+  </section>
+  <section class="py-10 font-[Open_Sans] text-[16px]">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row gap-8">
+      <div class="flex-1 flex items-center justify-center relative min-h-[320px] w-full">
+        <img src="../img/imgCollage1.png" alt="Collage"
+          class="rounded-xl w-3/4 max-w-xs md:max-w-full h-64 object-cover shadow-2xl border-4 border-[#CC3079] z-10">
+        <img src="../img/DIFlogo.jpg" alt="Collage"
+          class="absolute left-4 top-40 rounded-xl w-3/5 max-w-xs md:max-w-full h-40 object-cover shadow-lg border-4 border-[#CC3079] rotate-12 z-10">
+      </div>
+      <div class="flex-1 flex flex-col justify-center w-full">
+        <h2 class="text-xl font-bold mb-4 text-white bg-[#1C3973] w-[400px] max-w-full px-4 py-2 rounded">DIF Municipal de Pabellón de Arteaga</h2>
+        <p class="text-[#333333]">
+          Es un organismo público comprometido con el bienestar de las familias y sectores más vulnerables de nuestra comunidad.
+        </p>
+        <p class="text-[#333333]">
+          Trabajan para proteger los derechos y mejorar la calidad de vida de forma cercana y solidaria.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-200 py-10 font-[Open_Sans]">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row gap-8 items-center">
+      <div class="flex-1 w-full">
+        <h3 class="text-lg text-[20px] font-bold text-[#333333] justify-center mb-2">Mapa</h3>
+        <iframe class="rounded shadow-lg border-4 border-[#CC3079] w-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.96345312117745!2d-102.2828874410049!3d22.147008995732424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429e29c9ba09cc9%3A0x618aff3064fb33bb!2sDIF%20Municipal%20Pabell%C3%B3n%20de%20Arteaga!5e0!3m2!1ses!2smx!4v1751221780731!5m2!1ses!2smx"
+          width="100%" height="300" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex-1 text-[#333333] w-full">
+        <h3 class="text-lg font-bold mb-2">Encuéntranos</h3>
+        <p class="mb-2">Enrique Olivares Santana S/N, Progreso Sur, 20670 Pabellón de Arteaga, Ags</p>
+        <p class="mb-2">Horarios de atención:<br>Lunes a Viernes<br>8:00 a.m. a 3:00 p.m.</p>
+      </div>
+    </div>
+  </section>
+  <section class="py-10 font-[Open_Sans] text-[#333333]">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row gap-8 items-center md:divide-x-2 divide-[#333333]">
+      <div class="flex-1 flex flex-col items-center w-full">
+        <h3 class="text-lg text-[20px] font-bold mb-2">Redes sociales</h3>
+        <div class="flex justify-center items-center space-x-6 mt-4">
+          <a href="https://www.facebook.com/pabellon.gob/" target="_blank" aria-label="Facebook">
+            <img src="../img/iconFacebook.png" alt="Facebook" class="h-10 w-10 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://www.instagram.com/difestatal_ags/" target="_blank" aria-label="Instagram">
+            <img src="../img/iconInstagram.png" alt="Instagram" class="h-10 w-10 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://x.com/DIFAgs" target="_blank" aria-label="X">
+            <img src="../img/iconoX.jpeg" alt="X" class="h-10 w-10 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 flex flex-col items-center w-full">
+        <h3 class="text-lg text-[20px] font-bold mb-2">Contacto</h3>
+        <p class="mt-2 text-start">
+          <span class="font-semibold">Teléfono:</span> 465 958 0220<br>
+          <span class="font-semibold">Correo:</span> dif@pabellon.gob.mx
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#1C3973] text-white mt-auto">
+    <div class="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="flex justify-center md:justify-start">
+        <img src="../img/DIFlogo.jpg" alt="Logo DIF" class="h-24 w-auto rounded-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
+      </div>
+      <div class="text-[16px]">
+        <h4 class="font-semibold font-[Poppins] mb-2 border-b-4 border-[#CC3079] w-[120px]">Mapa de sitio</h4>
+        <ul class="space-y-1 font-[Open_Sans] text-sm justify-start">
+          <li><a href="inicio.html" class="hover:text-pink-300">Inicio</a></li>
+          <li><a href="historia.html" class="hover:text-pink-300">Historia</a></li>
+          <li><a href="quienesSomos.html" class="hover:text-pink-300">Quiénes somos</a></li>
+          <li><a href="programas.html" class="hover:text-pink-300">Programas</a></li>
+        </ul>
+      </div>
+      <div class="text-[16px]">
+        <h4 class="font-semibold mb-2 font-[Poppins] border-b-4 border-[#CC3079] w-[90px]">Contacto</h4>
+        <p class="font-[Open_Sans]">dif@pabellon.gob.mx</p>
+        <p class="font-[Open_Sans]">465 958 0220</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-2">
+          <a href="https://www.facebook.com/pabellon.gob/" target="_blank" aria-label="Facebook">
+            <img src="../img/iconFacebook.png" alt="Facebook" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://www.instagram.com/difestatal_ags/" target="_blank" aria-label="Instagram">
+            <img src="../img/iconInstagram.png" alt="Instagram" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+          <a href="https://x.com/DIFAgs" target="_blank" aria-label="X">
+            <img src="../img/iconoX.jpeg" alt="X" class="h-8 w-8 rounded-lg shadow-md hover:scale-110 transition" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-4 border-t-2 border-[#CC3079] pt-4 pb-4">
+      ©2025 DIF Pabellón de Arteaga
+    </div>
+  </footer>
+  <script src="../js/menuResponsivo.js"></script>
+</body>
+</html>
